@@ -1,0 +1,13 @@
+.alert{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+@media(max-width: 768px){
+    .alert{
+        margin-top: 2rem;
+    }
+}
