@@ -69,7 +69,7 @@ export default function useWeather() {
         try {
 
             const appiId = import.meta.env.VITE_API_KEY
-            const geoURL = `http://api.openweathermap.org/geo/1.0/direct?q=${state.city},${state.country}&appid=${appiId}`
+            const geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${state.city},${state.country}&appid=${appiId}`
             const response = await axios.get<any>(geoURL)
 
             //obtener lat y long
